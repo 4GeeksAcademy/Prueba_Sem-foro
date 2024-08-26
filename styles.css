@@ -1,0 +1,64 @@
+/* Estilos generales */
+body {
+    background-color: #2c3e50; /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contenedor del semáforo */
+  .traffic-light {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 300px;
+  }
+  
+  /* Estilos para las luces */
+  .light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #7f8c8d; /* Color apagado */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Colores para las luces encendidas */
+  .light.red {
+    background-color: #e74c3c;
+  }
+  
+  .light.yellow {
+    background-color: #f1c40f;
+  }
+  
+  .light.green {
+    background-color: #2ecc71;
+  }
+  
+  /* Animaciones de las luces al encenderse */
+  .light.red:hover {
+    background-color: #c0392b;
+    box-shadow: 0 0 20px #e74c3c;
+  }
+  
+  .light.yellow:hover {
+    background-color: #f39c12;
+    box-shadow: 0 0 20px #f1c40f;
+  }
+  
+  .light.green:hover {
+    background-color: #27ae60;
+    box-shadow: 0 0 20px #2ecc71;
+  }
+  
